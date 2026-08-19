@@ -7,11 +7,13 @@ app = Flask(__name__)
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 
 BASE_CONHECIMENTO = """
-Nome: Assistente Virtual da TechSolucoes.
+Empresa: TechSolucoes.
 Atendimento: Segunda a Sexta, das 9h as 18h.
-Produtos: Software de gestao, aplicativos personalizados, consultoria em IA.
-Precos: Consultoria a partir de R$ 200/hora.
-Contato: (11) 99999-9999
+Produtos: Software de gestao, aplicativos personalizados e consultoria em IA.
+Precos: Consultoria a partir de 200 reais por hora.
+Contato: Telefone 11 99999-9999 ou email contato@techsolucoes.com.br.
+Suporte: Suporte incluso no primeiro ano.
+Promocao: 15 por cento de desconto na primeira consultoria.
 """
 
 @app.route('/')
